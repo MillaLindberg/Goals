@@ -7,13 +7,26 @@
   </head>
   <body>
     <h1>help me choose...</h1>
-    <img src="http://blogg.feminint.se/wp-content/uploads/2014/10/rosa-fr%C3%A5getecken.jpg" alt="questionmark">
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Something"></input>
       </div>
       <button class="addOption">Add</button>
     </div>
+    <div class="resultSecion"></div>
     <button>GO!</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSecion').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+
+        $('.addOption').click(add_option)
+      })
+    </script>
   </body>
 </html>

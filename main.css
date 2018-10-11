@@ -1,5 +1,6 @@
 button {
-  background-color: orange;
+  background-color: #D291BC;
+  <link href=""
 }
 body {
   display: flex;
@@ -7,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  background-color: #FFDFD3
 }
 
 h1 {
